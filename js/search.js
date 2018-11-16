@@ -7,6 +7,7 @@ $('#search').on('submit', function(event) {
     teacher_list.forEach(function(teacher) {
         if(teacher.name.toLowerCase().indexOf(lookup) >= 0) {
             $(`.teacher[data-id="${teacher.teacher_id}"]`).fadeIn();
+            // console.log(teacher.teacher_id);
         }
     });
 });
